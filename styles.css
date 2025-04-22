@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0 auto;
+}
+
+#hero_bg {
+    background: black;
+}
+
+#container {
+    padding: 1em;
+}
+
+#header_details {
+    color: white;
+    text-align: center;
+    margin-bottom: -5em;
+    margin-top: -4em;
+}
+
+img {
+    width: 30%;
+}
+
+h1 {
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 50px;
+    font-family: Papyrus;
+}
+
+#hero_bg2 {
+    background: #3D3B40;
+}
+
+#mainsec_details {
+    display: flex;
+    color: white;
+    width: 100%;
+    padding: 20em;
+    margin-top: -17em;
+    justify-content: space-between;
+    font-family: Papyrus;
+}
+
+#details1 {
+    width: 40%;
+}
+
+#details2 {
+   width: 55%
+}
+
+input {
+    color: #333135;
+    font-family: Rockwell;
+}
+
+ul {
+    padding: 0;
+}
+
+.player-info {
+    background: white;
+    color: #333135;
+    font-family: Rockwell;
+    font-size: 12.2px;
+    margin-bottom: 0;
+    padding: 0%;
+}
+
+.player-row {
+    display: flex;
+    margin-bottom: 0;
+    padding: 0%;
+}
+
+li:hover {
+    background: #ddd;
+  }
+
+.deleteButton {
+    cursor: pointer;
+    font-weight: bolder;
+    position: absolute;
+    font-size: large;
+    right: 20rem;
+    width: 33px;
+    height: 40px;
+    border-color: #ddd;
+}
+
+.deleteButton:hover {
+    background: red;
+    color: white;
+    width: 33px;
+    height: 40px;
+    border-color: red;
+   
+}
+
+#button1 {
+    cursor: pointer;
+    width: 45px;
+    height: 21px;
+    font-family: rockwell;
+}
+
+#button1:hover {
+    background: #787878;
+    color: #333135;
+}

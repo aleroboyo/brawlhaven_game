@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Haven Leaderboard</title>
+    <!--Linking CSS File-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="hero_bg">
+            <div id="container">
+                <div id="header_details">
+                    <img src="logo-search-grid-2x.png">
+                    <h1>Conquer or be conquered⚔️...</h1>
+                </div>
+            </div>
+        </div> 
+    </header>
+    
+    <main>
+        <div id="hero_bg2">
+            <div id="container">
+                <div id="mainsec_details">
+                    <div id="details1">
+                        <h3>Player Details</h3>
+                        <input type="text" placeholder="Input Username" id="userName" class="js-playername" onkeydown="enterPower()">
+                        <br>
+                        <input type="number" placeholder="Input Score" id="score" class="js-score" onkeydown="enterPower()">
+                        <button id="button1" onclick="alertMessage(); useAdd()">Add</button>
+                    </div>
+                    <div id="details2">
+                        <h3>Leaderboard</h3>
+                        <div class="player-info"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

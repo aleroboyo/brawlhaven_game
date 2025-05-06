@@ -20,12 +20,20 @@ Happy brawling...⚔️😈`)
 
 let playerDetails = []
 
+const savedPlayers = localStorage.getItem('brawlLeaderboard')
+if (savedPlayers) {
+  playerDetails = JSON.parse(savedPlayers)
+  leaderboardList()
+}
+
 function addtoList () {
   const playerName = document.querySelector('.js-playername')
   const score = document.querySelector('.js-score')
 
   const playerInfo = `${playerName.value.trim()}: ${score.value.trim()}`
   playerDetails.push(playerInfo)
+
+  localStorage.setItem('brawlLeaderboard', JSON.stringify(playerDetails))
 
   leaderboardList ()
 }
@@ -63,6 +71,7 @@ let leaderboardListHtml = ''
 function deletePlayer(index) {
   playerDetails.splice(index, 1)
   leaderboardList()
+  localStorage.setItem('brawlLeaderboard', JSON.stringify(playerDetails))
 }
 
 
